@@ -4,10 +4,9 @@
 <br/>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Pyside%206-green"/><br/>
-    <a href="https://github.com/dreaming-coder" alt="Author">
-        <img src="https://img.shields.io/badge/author-ice-blue"/>
-    </a>
+    <img src="https://img.shields.io/badge/Pyside%206-green"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/author-ice-blue"/>
     &nbsp;
     <img alt="GitHub followers" src="https://img.shields.io/github/followers/dreaming-coder">
     &nbsp;
