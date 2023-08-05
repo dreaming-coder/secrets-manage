@@ -1,16 +1,23 @@
-# This is a sample Python script.
+from PySide6.QtGui import QPixmap
+from PySide6.QtWidgets import QApplication
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# noinspection PyUnresolvedReferences
+import resources.resources_rc
+from pages import LoginPage
 
 
-# Press the green button in the gutter to run the script.
+def init():
+    """
+    初始化程序
+    """
+    ...
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    init()
+    app = QApplication()
+    app.setWindowIcon(QPixmap(":/icons/icons/favicon.ico"))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    win = LoginPage()
+    win.show()
+    app.exec()

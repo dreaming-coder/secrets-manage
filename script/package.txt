@@ -1,0 +1,1 @@
+nuitka --mingw64 --standalone --windows-disable-console --show-progress --output-dir=out --enable-plugin=pyside6 --include-data-dir=conf=conf --windows-company-name=南京信息工程大学 --windows-product-name=密码管理器 --windows-file-version=1.0 --windows-file-description=助您记住各种账号的密码 --windows-icon-from-ico=E:\projects\secrets-manage\resources\icons\taiji.png app.py

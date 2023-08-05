@@ -1,0 +1,177 @@
+QFrame#frame {
+  background-color: rgb(60, 63, 65);
+}
+
+QPushButton#addPushButton,
+QPushButton#deletePushButton,
+QPushButton#resetPushButton {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid rgb(97, 97, 96);
+  color: aliceblue;
+  font-size: 14px;
+}
+
+QPushButton#addPushButton {
+  qproperty-icon: url(:/icons/icons/add.png);
+  text-align: left;
+  padding-left: 10px;
+}
+
+QPushButton#deletePushButton {
+  qproperty-icon: url(:/icons/icons/delete.png);
+  text-align: left;
+  padding-left: 10px;
+}
+
+QPushButton#deletePushButton:disabled {
+  background-color: #515556;
+}
+
+QPushButton#addPushButton:hover,
+QPushButton#deletePushButton:hover,
+QPushButton#resetPushButton:hover {
+  background-color: rgb(72, 75, 77);
+  border: 2px solid rgb(124, 124, 120);
+}
+
+QPushButton#searchPushButton {
+  background-color: transparent;
+  qproperty-icon: url(:/icons/icons/search.png);
+}
+
+QPushButton#searchPushButton:hover {
+  background-color: rgb(72, 75, 77);
+}
+
+QComboBox#conditionCombox {
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid rgb(97, 97, 96);
+  color: aliceblue;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+QComboBox#conditionCombox::drop-down {
+  width: 25px;
+  height: 30px;
+}
+
+QComboBox#conditionCombox::down-arrow {
+  /* 它的尺寸受 drop-down 的尺寸控制 */
+  image: url(:/icons/icons/down-arrow.png);
+  background: transparent; /* 下拉箭头的的背景色 */
+  width: 25px;
+  height: 30px;
+  padding: 0px 0px 4px 0px; /* 上内边距、右内边距、下内边距、左内边距 */
+}
+
+QComboBox#conditionCombox QAbstractItemView {
+  outline: 0px; /* 去掉外框虚线 */
+}
+
+/* 下拉项的样式 */
+QComboBox#conditionCombox QAbstractItemView::item {
+  color: aliceblue;
+  height: 30px;
+  background-color: rgb(72, 75, 77);
+}
+
+/* 鼠标悬浮在下拉项 */
+QComboBox#conditionCombox QAbstractItemView::item:hover {
+  /*这里设置背景色会被 selected 的样式覆盖*/
+  background-color: #08898b;
+}
+
+/* 选中下拉项 */
+QComboBox#conditionCombox QAbstractItemView::item:selected {
+  background-color: #08898b;
+}
+
+QLabel#conditionLabel {
+  color: aliceblue;
+}
+
+QLineEdit#contidionLineEdit {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid rgb(97, 97, 96);
+  color: aliceblue;
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+QLineEdit#contidionLineEdit:focus {
+  border: 2px solid rgb(134, 134, 129);
+}
+
+QLineEdit > QToolButton#clearButton {
+  qproperty-icon: url(:/icons/icons/clear-button.png);
+}
+
+QTableWidget#tableWidget {
+  background-color: rgb(43, 43, 43);
+  border: 10px;
+  outline: 0;
+  gridline-color: rgb(97, 94, 94);
+}
+
+QTableWidget#tableWidget QHeaderView::section {
+  background-color: #08898b;
+  color: aliceblue;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border-style: none;
+  border-bottom: 1px solid rgb(97, 94, 94);
+  border-right: 1px solid rgb(97, 94, 94);
+}
+
+QTableWidget#tableWidget QHeaderView::section:selected {
+  background-color: #08898b;
+}
+
+QTableWidget#tableWidget::item {
+  background-color: rgb(60, 63, 65);
+  color: aliceblue;
+  font-size: 12px;
+  height: 30px;
+  margin: 0;
+}
+
+/* QTableWidget#tableWidget::item:selected {
+  background-color: rgb(106, 110, 113); 设置选中的背景色
+} */
+
+QTableWidget QPushButton {
+  background-color: transparent;
+}
+
+/* 垂直滚动条*/
+QTableWidget QScrollBar::vertical {
+  background-color: #9ea3a5;
+  width: 8px;
+  border: 0;
+  border-radius: 2px;
+}
+
+/* 垂直滚动条的滑块 */
+QTableWidget QScrollBar::handle:vertical {
+  background-color: #65696b;
+  border-radius: 2px;
+}
+
+/* 滑动块边缘 */
+QTableWidget QScrollBar::add-line,
+QTableWidget QScrollBar::sub-line {
+  border: none;
+  border-radius: 2px;
+}
+
+/* 滑动块滑道 */
+QTableWidget QScrollBar::add-page,
+QTableWidget QScrollBar::sub-page {
+  background-color: #a0a4a8;
+}

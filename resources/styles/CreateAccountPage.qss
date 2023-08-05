@@ -1,0 +1,7 @@
+QFrame#createAccountFrame QLineEdit {
+    border: none;
+}
+
+QFrame#createAccountFrame{
+    background-image: url(:/imgs/imgs/createAccountPage-background.png);
+}

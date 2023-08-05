@@ -1,0 +1,19 @@
+QFrame#backgroundFrame {
+  background-image: url(:/imgs/imgs/loginPage-background.png);
+}
+
+QPushButton#forgetPwd,
+QPushButton#createAccount {
+  background-color: transparent;
+  border: 0;
+}
+
+QPushButton#forgetPwd:hover,
+QPushButton#createAccount:hover {
+  color: blue;
+}
+
+QComboBox,
+QLineEdit {
+  border: none;
+}

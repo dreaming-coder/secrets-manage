@@ -1,0 +1,52 @@
+QWidget#addItemPage {
+  border-radius: 15px;
+}
+
+QFrame#addItemFrame {
+  background-image: url(:/imgs/imgs/addItemPage-background.png);
+  border-radius: 15px;
+  opacity: 0.6;
+  border: 1px solid rgb(97, 97, 96);
+}
+
+QLabel#titleLabel {
+  border: 0;
+  background-color: transparent;
+  color: aqua;
+}
+
+QLineEdit#nameLineEdit,
+QLineEdit#accountLineEdit,
+QLineEdit#passwordLineEdit,
+QLineEdit#describeLineEdit {
+  border: none;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+QLineEdit > QToolButton#clearButton1,
+QLineEdit > QToolButton#clearButton2,
+QLineEdit > QToolButton#clearButton3 {
+  qproperty-icon: url(:/icons/icons/clear-button.png);
+}
+
+QPushButton#addPushButton,
+QPushButton#clearPushButton {
+  width: 100px;
+  height: 40px;
+  background-color: rgba(24, 24, 23, 0.775);
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+QPushButton#addPushButton:hover,
+QPushButton#clearPushButton:hover {
+  background-color: rgba(24, 24, 23, 0.905);
+}
+
+QPushButton#addPushButton:pressed,
+QPushButton#clearPushButton:pressed {
+  color: aqua;
+}
